@@ -10,9 +10,6 @@ df['Outlet_Temp (°C)'] = df['Outlet_Temp (°C)'].ffill()
 
 # Calculate temperature drop
 df['Temp_Drop'] = df['Inlet_Temp (°C)'] - df['Outlet_Temp (°C)']
-git init
-git add .
-git commit -m "Initial commit: Heat Exchanger Dataset Analysis"
 
 # Basic statistics
 avg = np.mean(df['Temp_Drop'])
